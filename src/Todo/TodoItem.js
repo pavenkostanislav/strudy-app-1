@@ -31,7 +31,7 @@ function TodoItem({ todo, index, onChange }) {
           type='checkbox'
           checked={todo.completed}
           style={styles.input}
-          onChange={() => onChange(todo.id)}
+          onChange={onChange.bind(null, todo.id)}
         />
         <strong>{index + 1}</strong>
         &nbsp;
