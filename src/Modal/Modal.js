@@ -8,7 +8,7 @@ export default class Modal extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <>
         <button onClick={() => this.setState({ isOpen: true })}>
           Open modal
         </button>
@@ -23,7 +23,7 @@ export default class Modal extends React.Component {
             </div>
           </div>
         )}
-      </React.Fragment>
+      </>
     );
   }
 }
